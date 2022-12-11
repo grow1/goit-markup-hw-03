@@ -161,7 +161,10 @@ button {
 }
 
 .order {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .order h1 {
@@ -185,6 +188,8 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 
 .order-button:hover {
@@ -298,11 +303,21 @@ button {
   row-gap: 48px;
   column-gap: 24px;
   justify-content: center;
+  width: 100%;
 }
 
 .cards > li {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 16px;
+  gap: 8px;
 }
 
 .project-name {
@@ -323,6 +338,7 @@ button {
   /* display: block;*/
   padding: 100px 1020px 100px 156px;
   row-gap: 16px;
+  width: 100%;
 }
 
 .logo-footer {
