@@ -17,6 +17,78 @@ body {
   letter-spacing: 0.02em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/*
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  // color: inherit;
+}
+*/
+.section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 24px 0 24px 156px;
+  /* max-width: 1199px; */
+  gap: 40px;
+}
+
+.contacts {
+  display: flex;
+  padding-left: 250px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -40,7 +112,12 @@ body {
 .nav-local,
 .cards {
   list-style-type: none;
-  text-align: center;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
 }
 
 .nav-global {
@@ -58,6 +135,12 @@ body {
 
 .current {
   color: var(--primary-brand-color);
+}
+
+.contacts,
+.navlist {
+  display: flex;
+  gap: 40px;
 }
 
 .contact {
@@ -125,6 +208,19 @@ body {
   overflow: hidden;
 }
 
+.benefits,
+.our-work,
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.benefits li {
+  width: 264px;
+}
+
 .benefit-name {
   font-weight: 700;
   font-size: 20px;
@@ -145,17 +241,18 @@ body {
   line-height: 1.11;
   text-align: center;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .our-team {
   background-color: var(--light-color);
+  text-align: center;
 }
 
 .our-team h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-color);
 }
@@ -201,12 +298,20 @@ body {
 
 .footer {
   background-color: var(--dark-color);
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  height: 310px;
+  /* display: block;*/
+  padding: 100px 1020px 100px 156px;
+  row-gap: 16px;
 }
 
 .logo-footer {
   color: var(--light-color);
+  margin-bottom: 24px;
 }
 
 .footer-text {
   color: var(--accent-color);
+  width: 264px;
 }

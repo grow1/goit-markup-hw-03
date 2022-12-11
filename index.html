@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,115 +17,130 @@
   <body>
     <!-- header -->
     <header>
-      <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
-      <nav>
-        <ul class="nav-list">
-          <li>
-            <a href="./index.html" class="nav-global current">Studio</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="nav-global">Portfolio</a>
-          </li>
-          <li>
-            <a href="#" class="nav-global">Contacts</a>
-          </li>
+      <div class="container header">
+        <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a href="./index.html" class="nav-global current">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="nav-global">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" class="nav-global">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+          <li><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
         </ul>
-      </nav>
-      <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
-      </ul>
+      </div>
     </header>
     <!-- main content -->
     <main>
       <!-- section order -->
-      <section class="order">
+      <section class="section order">
         <h1>Effective Solutions for Your Business</h1>
         <button class="order-button" type="button">Order Service</button>
       </section>
       <!-- section soft skills -->
-      <section class="soft-skills">
-        <h2 class="visually-hidden">Benefits</h2>
-        <ul class="benefits">
-          <li>
-            <h3 class="benefit-name">Strategy</h3>
-            <p class="benefit-description">
-              Our goal is to identify the business problem to walk away with the perfect and
-              creative solution.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefit-name">Punctuality</h3>
-            <p class="benefit-description">
-              Bring the key message to the brand's audience for the best price within the shortest
-              possible time.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefit-name">Diligence</h3>
-            <p class="benefit-description">
-              Research and confirm brands that present the strongest digital growth opportunities
-              and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="benefit-name">Technologies</h3>
-            <p class="benefit-description">
-              Design practice focused on digital experiences. We bring forth a deep passion for
-              problem-solving.
-            </p>
-          </li>
-        </ul>
+      <section class="section soft-skills">
+        <div class="container">
+          <h2 class="visually-hidden">Benefits</h2>
+          <ul class="benefits">
+            <li>
+              <h3 class="benefit-name">Strategy</h3>
+              <p class="benefit-description">
+                Our goal is to identify the business problem to walk away with the perfect and
+                creative solution.
+              </p>
+            </li>
+            <li>
+              <h3 class="benefit-name">Punctuality</h3>
+              <p class="benefit-description">
+                Bring the key message to the brand's audience for the best price within the shortest
+                possible time.
+              </p>
+            </li>
+            <li>
+              <h3 class="benefit-name">Diligence</h3>
+              <p class="benefit-description">
+                Research and confirm brands that present the strongest digital growth opportunities
+                and minimize risk.
+              </p>
+            </li>
+            <li>
+              <h3 class="benefit-name">Technologies</h3>
+              <p class="benefit-description">
+                Design practice focused on digital experiences. We bring forth a deep passion for
+                problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section what are we doing -->
-      <section class="presentation">
-        <h2>What are we doing</h2>
-        <ul class="our-work">
-          <li>
-            <img src="./images/statistic.jpg" width="360" height="300" alt="statistic" />
-          </li>
-          <li>
-            <img src="./images/pagination.jpg" width="360" height="300" alt="pagination" />
-          </li>
-          <li>
-            <img src="./images/device.jpg" width="360" height="300" alt="device" />
-          </li>
-        </ul>
+      <section class="section presentation">
+        <div class="container">
+          <h2>What are we doing</h2>
+          <ul class="our-work">
+            <li>
+              <img src="./images/statistic.jpg" width="360" height="auto" alt="statistic" />
+            </li>
+            <li>
+              <img src="./images/pagination.jpg" width="360" height="auto" alt="pagination" />
+            </li>
+            <li>
+              <img src="./images/device.jpg" width="360" height="auto" alt="device" />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section our team -->
-      <section class="our-team">
-        <h2>Our Team</h2>
-        <ul class="team-cards">
-          <li>
-            <img src="./images/product_designer.jpg" width="264" height="260" alt="Mark's photo" />
-            <h3 class="worker-name">Mark Guerrero</h3>
-            <p class="worker-position">Product Designer</p>
-          </li>
-          <li>
-            <img src="./images/developer.jpg" width="264" height="260" alt="Tom's photo" />
-            <h3 class="worker-name">Tom Ford</h3>
-            <p class="worker-position">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/marketing.jpg" width="264" height="260" alt="Camila's photo" />
-            <h3 class="worker-name">Camila Garcia</h3>
-            <p class="worker-position">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/ui_designer.jpg" width="264" height="260" alt="Daniel's photo" />
-            <h3 class="worker-name">Daniel Wilson</h3>
-            <p class="worker-position">UI Designer</p>
-          </li>
-        </ul>
+      <section class="section our-team">
+        <div class="container">
+          <h2>Our Team</h2>
+          <ul class="team-cards">
+            <li>
+              <img
+                src="./images/product_designer.jpg"
+                width="264"
+                height="260"
+                alt="Mark's photo"
+              />
+              <h3 class="worker-name">Mark Guerrero</h3>
+              <p class="worker-position">Product Designer</p>
+            </li>
+            <li>
+              <img src="./images/developer.jpg" width="264" height="260" alt="Tom's photo" />
+              <h3 class="worker-name">Tom Ford</h3>
+              <p class="worker-position">Frontend Developer</p>
+            </li>
+            <li>
+              <img src="./images/marketing.jpg" width="264" height="260" alt="Camila's photo" />
+              <h3 class="worker-name">Camila Garcia</h3>
+              <p class="worker-position">Marketing</p>
+            </li>
+            <li>
+              <img src="./images/ui_designer.jpg" width="264" height="260" alt="Daniel's photo" />
+              <h3 class="worker-name">Daniel Wilson</h3>
+              <p class="worker-position">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
-      <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital marketing & growth
-        solutions.
-      </p>
+    <footer>
+      <div class="container footer">
+        <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with digital marketing & growth
+          solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
