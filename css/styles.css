@@ -60,35 +60,39 @@ button {
 }
 */
 .section {
-  @media screen and (max-width: 1199px) {
+  /* @media screen and (max-width: 1199px) {
     padding-top: 96px;
     padding-bottom: 96px;
-  }
+  } */
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  padding: 24px 0 24px 156px;
-  /* max-width: 1199px; */
-  gap: 40px;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding: 24px 0;
+}
+
+.navigation {
+  margin-left: 77px;
 }
 
 .contacts {
   display: flex;
-  justify-content: end; /*не виходить притиснути до правого краю*/
+  margin-left: auto;
 }
 
 .logo {
@@ -106,15 +110,11 @@ button {
   color: var(--dark-color);
 }
 
-.nav-list,
-.contacts,
-.benefits,
-.our-work,
-.team-cards,
-.nav-local,
-.cards {
+ul,
+ol {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 .nav-list {
@@ -161,10 +161,8 @@ button {
 }
 
 .order {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 192px 0;
+  text-align: center;
 }
 
 .order h1 {
@@ -174,6 +172,8 @@ button {
   color: var(--pure-white);
   text-align: center;
   letter-spacing: 0.02em;
+  width: 496px;
+  margin: 0 auto;
 }
 
 .order-button {
@@ -240,6 +240,10 @@ button {
   line-height: 1.5;
 }
 
+.our-work li {
+  width: 360px;
+}
+
 .presentation h2,
 .our-team h2 {
   text-transform: capitalize;
@@ -266,6 +270,7 @@ button {
 
 .team-cards li {
   flex-direction: column;
+  width: 264px;
   justify-content: center;
   align-items: center;
   padding: 0px 0px 32px;
@@ -319,6 +324,7 @@ button {
 }
 
 .cards > li {
+  width: 360px;
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -344,10 +350,7 @@ button {
 
 .footer {
   background-color: var(--dark-color);
-  flex-direction: column;
-  /* justify-content: flex-start; */
   height: 310px;
-  /* display: block;*/
   padding: 100px 1020px 100px 156px;
   row-gap: 16px;
   width: 100%;

@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -17,9 +23,9 @@
   <body>
     <!-- header -->
     <header>
-      <div class="container section header">
+      <div class="container header">
         <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
-        <nav>
+        <nav class="navigation">
           <ul class="nav-list">
             <li>
               <a href="./index.html" class="nav-global current">Studio</a>
@@ -42,8 +48,10 @@
     <main>
       <!-- section order -->
       <section class="section order">
-        <h1>Effective Solutions for Your Business</h1>
-        <button class="order-button" type="button">Order Service</button>
+        <div class="container">
+          <h1>Effective Solutions for Your Business</h1>
+          <button class="order-button" type="button">Order Service</button>
+        </div>
       </section>
       <!-- section soft skills -->
       <section class="section soft-skills">
@@ -107,24 +115,24 @@
               <img
                 src="./images/product_designer.jpg"
                 width="264"
-                height="260"
+                height="auto"
                 alt="Mark's photo"
               />
               <h3 class="worker-name">Mark Guerrero</h3>
               <p class="worker-position">Product Designer</p>
             </li>
             <li>
-              <img src="./images/developer.jpg" width="264" height="260" alt="Tom's photo" />
+              <img src="./images/developer.jpg" width="264" height="auto" alt="Tom's photo" />
               <h3 class="worker-name">Tom Ford</h3>
               <p class="worker-position">Frontend Developer</p>
             </li>
             <li>
-              <img src="./images/marketing.jpg" width="264" height="260" alt="Camila's photo" />
+              <img src="./images/marketing.jpg" width="264" height="auto" alt="Camila's photo" />
               <h3 class="worker-name">Camila Garcia</h3>
               <p class="worker-position">Marketing</p>
             </li>
             <li>
-              <img src="./images/ui_designer.jpg" width="264" height="260" alt="Daniel's photo" />
+              <img src="./images/ui_designer.jpg" width="264" height="auto" alt="Daniel's photo" />
               <h3 class="worker-name">Daniel Wilson</h3>
               <p class="worker-position">UI Designer</p>
             </li>
