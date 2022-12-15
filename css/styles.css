@@ -26,12 +26,13 @@ h6,
 p {
   margin: 0;
 }
-/*
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+/*
 address {
   font-style: normal;
 }
@@ -41,6 +42,7 @@ button {
   border: none;
   border-radius: 4px;
 }
+
 .section {
   @media screen and (max-width: 1199px) {
     padding-top: 60px;
@@ -77,13 +79,11 @@ button {
 header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding: 24px 0;
 }
 
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  padding: 24px 0;
 }
 
 .navigation {
@@ -234,6 +234,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .benefit-description {
@@ -242,6 +243,10 @@ ol {
 
 .our-work li {
   width: 360px;
+}
+
+.presentation {
+  padding-top: 0;
 }
 
 .presentation h2,
@@ -266,19 +271,19 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .team-cards li {
-  flex-direction: column;
   width: 264px;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 0px 32px;
-  gap: 32px;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+.card-info {
+  padding: 32px 0;
 }
 
 .worker-position {
@@ -319,29 +324,24 @@ ol {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  justify-content: center;
-  width: 100%;
 }
 
 .cards > li {
   width: 360px;
-  border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px 16px;
-  gap: 8px;
+  padding: 32px 16px;
+  border: 0.5px solid #f4f4fd;
+  border: 0;
 }
 
 .project-name {
   font-weight: 700;
   font-size: 20px;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .project-type {
@@ -350,10 +350,7 @@ ol {
 
 .footer {
   background-color: var(--dark-color);
-  height: 310px;
-  padding: 100px 1020px 100px 156px;
-  row-gap: 16px;
-  width: 100%;
+  padding: 100px 0;
 }
 
 .logo-footer {
@@ -364,4 +361,5 @@ ol {
 .footer-text {
   color: var(--accent-color);
   width: 264px;
+  margin-top: 16px;
 }
